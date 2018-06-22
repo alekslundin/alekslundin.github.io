@@ -10,6 +10,8 @@
     body{
         font-size: 17px;
         color: #666766;
+        margin: 0;
+        padding: 0;
     }
 
     form{
@@ -19,6 +21,7 @@
         font-family: 'Open Sans', sans-serif;
         padding-top: 49px;
         text-align: center;
+      
     }
     [type="text"],[type="email"]{
         max-width: 388px;
@@ -95,9 +98,15 @@
         margin: 0;
         padding: 0;
     }
+    .align-items{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
     </style>
 </head>
 <body>
+    <div class="align-items">
     <form action="" method="post">
         <div class="first_block">
             <input type="text" name="name" required placeholder="Your Name">
@@ -129,6 +138,7 @@
         </div>
         <button type="submit">Submit</button>
         <p>We respect your email privacy.</p>
-    </form>      
+    </form>  
+</div>    
 </body>
 </html>
