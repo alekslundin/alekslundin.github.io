@@ -13,6 +13,7 @@
             color: #666766;
             margin: 0;
             padding: 0;
+            line-height: 1.4;
         }
 
         form {
@@ -44,11 +45,17 @@
             margin-top: 27px;
             margin-bottom: 42px;
         }
+        .payment ,.buy {
+            color:#141414;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
         #buy-in,
         #payment-method {
             display: block;
             font-weight: 400;
+            
         }
 
         select {
@@ -82,7 +89,7 @@
         }
 
         button {
-            margin-top: 58px;
+            
             border: none;
             outline: none;
             color: #ffffff;
@@ -90,9 +97,9 @@
             padding: 10px 25px;
             border-radius: 10px;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
-            background: linear-gradient(180deg, #81C465, #6DA555), #81C465;
+            background: linear-gradient(180deg, #7dd164, #6DA555), #7dd164;
             cursor: pointer;
-            margin-bottom: 63px;
+            margin: 55px 0;
         }
 
         button:hover {
@@ -100,7 +107,7 @@
         }
 
         form p {
-            color: #666766;
+            color: #666666;
             font-size: 12px;
             font-weight: 400;
             text-align: center;
@@ -120,6 +127,12 @@
             width: 100%;
             height: auto;
         }
+        .notice{
+          font-size: 16px;
+          font-weight: bold;
+          color: #666666;
+          padding-bottom: 35px;  
+        }
     </style>
 </head>
 
@@ -129,6 +142,8 @@
             <div class="logo">
                 <img src="CBDoken_large.png" alt="CBDoken">
             </div>
+            <p class="notice"> During the private sale we accept Fiat (€ / $), <br>
+                Bitcoin and Etherum.The private sale is only in limited quantities.</p>
             <div class="first_block">
                 <input type="text" name="name" required placeholder="Your Name">
                 <input type="email" name="mail" required placeholder="Your Email">
