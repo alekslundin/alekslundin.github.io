@@ -1,144 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-    body{
-        font-size: 17px;
-        color: #666766;
-        margin: 0;
-        padding: 0;
-    }
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+        body {
+            font-size: 17px;
+            color: #666766;
+            margin: 0;
+            padding: 0;
+        }
 
-    form{
-        max-width: 418px;
-        width: 100%;
-        margin: auto;
-        font-family: 'Open Sans', sans-serif;
-        padding-top: 49px;
-        text-align: center;
-      
-    }
-    [type="text"],[type="email"]{
-        max-width: 388px;
-        width: 100%;
-        text-align: center;
-        height: 37px;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
-        font-size: 17px;
-        font-weight: 300;
-        border-radius: 10px;
-        outline: none;
-        border: none;
-        background: #e7e8e9;
-        margin-bottom: 22px;
-    }
-    .buy{
-        margin-top: 27px;
-        margin-bottom: 42px;
-    }
-    #buy-in, #payment-method{
-        display: block;
-        font-weight: 400;
-    }
-    select{
-        margin: auto;
-        padding: 8px 26px 8px 10px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        background: #e7e8e9;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
-        color: #666766;
-        font-size: 17px;
-        font-weight: 300;
-        margin-top: 10px;
-        -webkit-appearance: none;
-        background-image: url('carret.svg');
-        background-position: 97% center;
-        background-repeat: no-repeat;
-        line-height: 1em;
-        /* for FF */
-        -moz-appearance: none;
-        text-indent: 0.01px; 
-        text-overflow: '';
-        /* for IE */
-        -ms-appearance: none;
-        appearance: none!important;
+        form {
+            max-width: 418px;
+            width: 100%;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+
+        }
+
+        [type="text"],
+        [type="email"] {
+            max-width: 388px;
+            width: 100%;
+            text-align: center;
+            height: 37px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
+            font-size: 17px;
+            font-weight: 300;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background: #e7e8e9;
+            margin-bottom: 22px;
+        }
+
+        .buy {
+            margin-top: 27px;
+            margin-bottom: 42px;
+        }
+
+        #buy-in,
+        #payment-method {
+            display: block;
+            font-weight: 400;
+        }
+
+        select {
+            margin: auto;
+            padding: 8px 26px 8px 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background: #e7e8e9;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
+            color: #666766;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: 10px;
+            -webkit-appearance: none;
+            background-image: url('carret.svg');
+            background-position: 97% center;
+            background-repeat: no-repeat;
+            line-height: 1em;
+            /* for FF */
+            -moz-appearance: none;
+            text-indent: 0.01px;
+            text-overflow: '';
+            /* for IE */
+            -ms-appearance: none;
+            appearance: none !important;
         }
 
         select::-ms-expand {
-        display: none;
+            display: none;
         }
-    button{
-        margin-top: 58px;
-        border: none;
-        outline: none;
-        color: #ffffff;
-        font-size: 24px;
-        padding: 10px 25px;
-        border-radius: 10px;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
-        background: linear-gradient(180deg,#81C465,#6DA555 ),#81C465;
-        cursor: pointer;
-        margin-bottom: 63px;
-    }
-    button:hover{
-        background: linear-gradient(180deg,#72cd57,#5FAA48 ),#72cd57;
-    }
-    form p{
-        color: #666766;
-        font-size: 12px;
-        font-weight: 400;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    .align-items{
-        display: flex;
-        align-items: center;
-        height: 100vh;
-    }
+
+        button {
+            margin-top: 58px;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            font-size: 24px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.21);
+            background: linear-gradient(180deg, #81C465, #6DA555), #81C465;
+            cursor: pointer;
+            margin-bottom: 63px;
+        }
+
+        button:hover {
+            background: linear-gradient(180deg, #72cd57, #5FAA48), #72cd57;
+        }
+
+        form p {
+            color: #666766;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .align-items {
+            display: flex;
+            /* align-items: center; */
+            height: 100%;
+            flex-flow: row;
+            padding: 0 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
+
 <body>
     <div class="align-items">
-    <form action="" method="post">
-        <div class="first_block">
-            <input type="text" name="name" required placeholder="Your Name">
-            <input type="email" name="mail" required placeholder="Your Email">
-        </div>
-        <div class="buy">
-            Buy In:
+        <form action="" method="post">
+            <div class="logo">
+                <img src="CBDoken_large.png" alt="CBDoken">
+            </div>
+            <div class="first_block">
+                <input type="text" name="name" required placeholder="Your Name">
+                <input type="email" name="mail" required placeholder="Your Email">
+            </div>
+            <div class="buy">
+                Buy In:
                 <select name="buy-in" id="buy-in">
-                    <option value="1350€	(100 Token)">1350€	(100 Token)</option>
-                    <option value="2700€	(200 Token">2700€	(200 Token</option>
-                    <option value="4050€	(300 Token)">4050€	(300 Token)</option>
-                    <option value="8100€	(600 Token">8100€	(600 Token)</option>
-                    <option value="13 500€	(1000 Token)">13 500€	(1000 Token)</option>
-                    <option value="27 000€	(2000 Token">27 000€	(2000 Token</option>
-                    <option value="40 500€	(3000 Token)">40 500€	(3000 Token)</option>
-                    <option value="81 000€	(6000 Token">81 000€	(6000 Token)</option>
+                    <option value="1350€	(100 Token)">1350€ (100 Token)</option>
+                    <option value="2700€	(200 Token">2700€ (200 Token</option>
+                    <option value="4050€	(300 Token)">4050€ (300 Token)</option>
+                    <option value="8100€	(600 Token">8100€ (600 Token)</option>
+                    <option value="13 500€	(1000 Token)">13 500€ (1000 Token)</option>
+                    <option value="27 000€	(2000 Token">27 000€ (2000 Token</option>
+                    <option value="40 500€	(3000 Token)">40 500€ (3000 Token)</option>
+                    <option value="81 000€	(6000 Token">81 000€ (6000 Token)</option>
                 </select>
-            
-        </div>
-        <div class="payment">
-           Payment Method:
+
+            </div>
+            <div class="payment">
+                Payment Method:
                 <select name="payment-method" id="payment-method">
-                        <option value="Bank Transfer">Bank Transfer</option>
-                        <option value="PayPal">PayPal</option>
-                        <option value="BTC">BTC</option>
-                        <option value="ETH">ETH</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
                 </select>
-            
-        </div>
-        <button type="submit">Submit</button>
-        <p>We respect your email privacy.</p>
-    </form>  
-</div>    
+
+            </div>
+            <button type="submit">Submit</button>
+            <p>We respect your email privacy.</p>
+        </form>
+    </div>
 </body>
+
 </html>
