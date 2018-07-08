@@ -5,6 +5,7 @@ div#programs_block {
     flex-direction: column;
     align-items: center; */
     margin: auto;
+    margin-top: 40px;
 }
 
 .bem_offer:link, .bem_offer:visited {
@@ -16,27 +17,75 @@ div#programs_block {
     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     margin-bottom: 21px;
-    padding:30px 20px;
+    padding: 20px;
     position: relative;
     border: 1px solid transparent;
     text-decoration: none;
     transition: 0.2s;
     width: 700px;
     box-sizing: border-box;
+    margin: 40px 0;
 }
 
-.bem_offer__note {
+.bem_offer__border{
+    box-shadow: 0 0 5px 0 #7e9dff;
+    border: 3px solid #6085ff;
+    position: relative;
+}
+.bem_offer__border .bem_offer__note{
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -16px;
+    margin: 0;
+    padding: 9px 16px 8px 14px;
+    color: #fff;
+    background-color: #3358d5;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14);
+}
 
+.bem_offer__border .bem_offer__note::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -7px;
+    border-top: 0 inset transparent;
+    border-right: 12px solid #133091;
+    border-bottom: 7px inset transparent;
+    border-left: 11px inset transparent;
+
+}
+.bem_offer__note {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -16px;
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14);
     background: #fa5d49;
     color: #fff;
     font-size: 14px;
     padding: 10px 20px 7px;
     position: absolute;
-    left: 9px;
     line-height: 1;
     transition: 0.2s;
     text-transform: uppercase;
-    top: 0;
+}
+.bem_offer__note::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -7px;
+    border-top: 0 inset transparent;
+    border-right: 14px solid #fa5d49;
+    border-bottom: 7px inset transparent;
+    border-left: 11px inset transparent;
 }
 .bem_offer__head{
     background-color: #d9edf7;
@@ -100,6 +149,9 @@ div#programs_block {
 }
 .bem_offer:hover .bem_offer__note {
     background: #f19f00;
+}
+.bem_offer:hover .bem_offer__note::after{
+    border-right: 12px solid  #f19f00;
 }
 .bem_offer:hover .bem_offer__get .button {
     -webkit-box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
